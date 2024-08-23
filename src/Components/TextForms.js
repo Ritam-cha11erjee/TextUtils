@@ -96,7 +96,7 @@ export default function(props){
 
     return(
         <>
-         <div className = 'container my-5'>
+         <div className = 'container my-2'>
             {/* <div className="mb-3" style={theme}> */}
             <div className="mb-3" style = {props.mode === 'dark'? {color: 'white'}: {color: 'black'}}>
             <label htmlFor="exampleFormControlTextarea1" className="form-label">Enter text below:</label>

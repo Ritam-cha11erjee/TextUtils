@@ -16,10 +16,10 @@ export default function(props){
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                <a className="nav-link active" aria-current="page" style = {{color: props.theme.tertiary}} href="/">Home</a>
+                <a className="nav-link active" aria-current="page" style = {{color: props.theme.tertiary}} href="/TextUtils/">Home</a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="/about" style = {{color: props.theme.tertiary}}>About</a>
+                <a className="nav-link" href="/TextUtils/about" style = {{color: props.theme.tertiary}}>About</a>
                 </li>
                 <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false" style = {{color: props.theme.tertiary}}>

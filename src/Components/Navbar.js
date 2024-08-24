@@ -16,7 +16,7 @@ export default function(props){
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                <a className="nav-link active" aria-current="page" style = {{color: props.theme.tertiary}} href="/TextUtils/">Home</a>
+                <a className="nav-link active" aria-current="page" style = {{color: props.theme.tertiary}} href="/TextUtils/">Homee</a>
                 </li>
                 <li className="nav-item">
                 <a className="nav-link" href="/TextUtils/about" style = {{color: props.theme.tertiary}}>About</a>

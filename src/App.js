@@ -4,7 +4,7 @@ import About from './Components/About'
 import Navbar from './Components/Navbar'
 import Alert from './Components/Alert'
 import React, {useState, useRef} from 'react'
-// import {BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
+import {BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 
 function App() {
     let intervalID;
@@ -61,17 +61,17 @@ function App() {
 
   return (
     <>
-          {/* <BrowserRouter> */}
+          <BrowserRouter>
       <Navbar mode={mode} toggleMode={changeMode} theme={theme}/>
       <Alert alert={alert}/>
-{/* 
+
           <Routes>
             <Route exact path="/" element={<TextForms mode={mode} showAlert={showAlert} redTheme={redTheme} greenTheme={greenTheme} theme={theme} toggleMode={changeMode}/>}>
             </Route>
             <Route exact path="about" element={<About/>}>
             </Route>
-          </Routes> */}
-        {/* </BrowserRouter> */}
+          </Routes>
+        </BrowserRouter>
 
         <TextForms mode={mode} showAlert={showAlert} redTheme={redTheme} greenTheme={greenTheme} theme={theme} toggleMode={changeMode}/>
     </>

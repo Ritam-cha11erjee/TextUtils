@@ -61,14 +61,14 @@ function App() {
 
   return (
     <>
-          <BrowserRouter>
+          <BrowserRouter basename= '/TextUtils'>
       <Navbar mode={mode} toggleMode={changeMode} theme={theme}/>
       <Alert alert={alert}/>
 
           <Routes>
-            <Route exact path="/" element={<TextForms mode={mode} showAlert={showAlert} redTheme={redTheme} greenTheme={greenTheme} theme={theme} toggleMode={changeMode}/>}>
+            <Route exact path="/TextUtils/" element={<TextForms mode={mode} showAlert={showAlert} redTheme={redTheme} greenTheme={greenTheme} theme={theme} toggleMode={changeMode}/>}>
             </Route>
-            <Route exact path="about" element={<About/>}>
+            <Route exact path="/TextUtils/about" element={<About/>}>
             </Route>
           </Routes>
         </BrowserRouter>

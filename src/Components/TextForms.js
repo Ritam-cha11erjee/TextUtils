@@ -83,7 +83,7 @@ export default function(props){
         if(text === ''){
             return 0;
         }
-        wordArray2 = text.split(' ');
+        wordArray2 = text.split(/\s+/);
         console.log(wordArray2);
         wordArray2.forEach(word => {
             if(word === ''){}

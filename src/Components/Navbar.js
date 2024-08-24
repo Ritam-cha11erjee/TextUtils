@@ -6,7 +6,6 @@ export default function(props){
     return(
 
         <>
-        <BrowserRouter>
         <nav className="navbar navbar-expand-lg" style = {{backgroundColor: props.theme.secondary}}>
         <div className="container-fluid" style = {{color: props.theme.tertiary}}>
             <a className="navbar-brand" style = {{color: props.theme.tertiary}} href="/">Navbar</a>
@@ -16,11 +15,7 @@ export default function(props){
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-<<<<<<< Updated upstream
                 <a className="nav-link active" aria-current="page" style = {{color: props.theme.tertiary}} href="/TextUtils/">Home</a>
-=======
-                <Link className="nav-link active" aria-current="page" style = {{color: props.theme.tertiary}} to="/TextUtils/">Homee</Link>
->>>>>>> Stashed changes
                 </li>
                 <li className="nav-item">
                 <Link className="nav-link" to="/TextUtils/about" style = {{color: props.theme.tertiary}}>About</Link>
@@ -47,7 +42,6 @@ export default function(props){
             </div>
         </div>
         </nav>
-        </BrowserRouter>
         </>
     );
 }

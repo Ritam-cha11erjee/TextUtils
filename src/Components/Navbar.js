@@ -1,12 +1,12 @@
 import React from 'react'
-import {BrowserRouter, Link} from 'react-router-dom';
+// import {BrowserRouter, Link} from 'react-router-dom';
 
 export default function(props){
 
     return(
 
         <>
-        <BrowserRouter>
+        {/* <BrowserRouter> */}
         <nav className="navbar navbar-expand-lg" style = {{backgroundColor: props.theme.secondary}}>
         <div className="container-fluid" style = {{color: props.theme.tertiary}}>
             <a className="navbar-brand" style = {{color: props.theme.tertiary}} href="/">Navbar</a>
@@ -16,10 +16,10 @@ export default function(props){
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" style = {{color: props.theme.tertiary}} to="/TextUtils/">Home</Link>
+                <a className="nav-link active" aria-current="page" style = {{color: props.theme.tertiary}} href="/TextUtils/">Homie</a>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link" to="/TextUtils/about" style = {{color: props.theme.tertiary}}>About</Link>
+                <a className="nav-link" href="/TextUtils/about" style = {{color: props.theme.tertiary}}>About</a>
                 </li>
                 <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false" style = {{color: props.theme.tertiary}}>
@@ -43,7 +43,7 @@ export default function(props){
             </div>
         </div>
         </nav>
-        </BrowserRouter>
+        {/* </BrowserRouter> */}
         </>
     );
 }
